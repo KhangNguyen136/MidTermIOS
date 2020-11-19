@@ -1,0 +1,30 @@
+PODS:
+  - AlertsAndPickers (2.0.2)
+  - FlexColorPicker (1.4.2)
+  - Realm (10.1.2):
+    - Realm/Headers (= 10.1.2)
+  - Realm/Headers (10.1.2)
+  - RealmSwift (10.1.2):
+    - Realm (= 10.1.2)
+
+DEPENDENCIES:
+  - AlertsAndPickers
+  - FlexColorPicker
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - AlertsAndPickers
+    - FlexColorPicker
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  AlertsAndPickers: 2a9cabfadaa2f4d52066bd842a7a1b1b2327a248
+  FlexColorPicker: d7ed5cfd8ceb936f2930e4e30629f9448967a5f8
+  Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
+  RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
+
+PODFILE CHECKSUM: f185e6210189dea79c073c35d57d09c67bb75940
+
+COCOAPODS: 1.10.0
