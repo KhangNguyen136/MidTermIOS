@@ -18,7 +18,7 @@ class EventMainVC: UIViewController, AddGuestDelegate, UIFontPickerViewControlle
     var event = eventInfor()
     var myColor = "black"
     let realm = try! Realm()
-    
+    var action = "Edit current event"
     @IBOutlet weak var titleVC: UILabel!
     @IBOutlet weak var listTV: UITableView!
     @IBOutlet weak var eventName: UITextField!
@@ -175,6 +175,8 @@ class EventMainVC: UIViewController, AddGuestDelegate, UIFontPickerViewControlle
         fontColor.backgroundColor = UIColor().getMyColor(color: event._fontColor)
         myColor = event._fontColor
         listTV.reloadData()
+        
+        titleVC.text = action
         print(realm.configuration.fileURL!)
     }
     override func viewDidLoad() {

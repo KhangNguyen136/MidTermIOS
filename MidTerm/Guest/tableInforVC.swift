@@ -11,6 +11,10 @@ class tableInforVC: UIViewController {
 
     @IBOutlet weak var tableInfor: UITableView!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var title1: UILabel!
+    @IBOutlet weak var title2: UILabel!
+    @IBOutlet weak var title3: UILabel!
+    @IBOutlet weak var title4: UILabel!
     @IBOutlet weak var table: UILabel!
     @IBOutlet weak var guests: UILabel!
     @IBOutlet weak var section: UILabel!
@@ -19,8 +23,8 @@ class tableInforVC: UIViewController {
     var arr:[rowInfor] = []
     let realm = try! Realm()
     override func viewDidLoad() {
-        otherView.layer.borderWidth = 2
-        otherView.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
+        otherView.layer.borderWidth = 10
+        otherView.layer.borderColor = UIColor.black.cgColor
         super.viewDidLoad()
         tableInfor.register(sameTableCell.self, forCellReuseIdentifier: "sameTableCell")
         takeData(temp: infor)
@@ -37,7 +41,7 @@ class tableInforVC: UIViewController {
         guests.text = infor.guest
         section.text = infor.section
         
-        let result = try! realm.objects(rowInfor.self).filter({$0.table == temp.table})
+        let result = try! realm.objects(rowInfor.self).filter({$0.table == temp.table && $0 != temp})
         if(result.isEmpty)
         {
             return
@@ -52,7 +56,46 @@ class tableInforVC: UIViewController {
         }
         
     }
+    func setTitle()  {
+       
+        let infor = realm.objects(eventInfor.self)
+        if infor.isEmpty
+        {
+            return
+        }
+        name.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
+        name.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
+        
+        title1.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
+        title1.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
+        title1.adjustsFontSizeToFitWidth = true
+        title2.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
+        title2.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
+        title2.adjustsFontSizeToFitWidth = true
+        
+        title3.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
+        title3.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
+        title3.adjustsFontSizeToFitWidth = true
+        
+        title4.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
+        title4.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
+    }
     override func viewWillAppear(_ animated: Bool) {
+        table.layer.masksToBounds = true
+        table.layer.cornerRadius = table.frame.width/3
+        table.backgroundColor = UIColor.systemGray4
+        
+        guests.layer.borderWidth = 5
+        guests.layer.borderColor = UIColor.brown.cgColor
+        guests.layer.cornerRadius = guests.frame.width/4
+        guests.layer.masksToBounds = true
+        guests.backgroundColor = UIColor.systemGreen
+        
+        section.layer.borderWidth = 5
+        section.layer.borderColor =  UIColor.black.cgColor
+        section.backgroundColor = UIColor.systemYellow
+        
+        setTitle()
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         

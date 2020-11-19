@@ -10,6 +10,7 @@ import RealmSwift
 class chooseTableVC: UIViewController {
 
     var key: String = ""
+    var loadedData = false
     @IBOutlet weak var titleVC: UILabel!
     @IBOutlet weak var resultTV: UITableView!
     var result: [rowInfor] = []
@@ -38,15 +39,31 @@ class chooseTableVC: UIViewController {
                 
             }
             resultTV.reloadData()
+            loadedData = true
         }
         
+    }
+    func setTitle()  {
+        
+        let infor = realm.objects(eventInfor.self)
+        if infor.isEmpty
+        {
+            return
+        }
+        titleVC.text = infor[0]._eventName
+        titleVC.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
+        titleVC.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
     }
     @IBAction func clickHome(){
         self.navigationController?.popViewController(animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         resultTV.register(resultInfor.self, forCellReuseIdentifier: "resultInfor")
+        if(!loadedData)
+        {
         self.getData(by: key)
+         setTitle()
+        }
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }

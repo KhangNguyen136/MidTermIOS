@@ -18,8 +18,8 @@ class rowInfor: Object {
 
 class eventInfor: Object {
     @objc dynamic var _eventName: String = ""
-    @objc dynamic var _fontSize: Int = 22
-    @objc dynamic var _fontStyle: String = "Arial"
+    @objc dynamic var _fontSize: Int = 33
+    @objc dynamic var _fontStyle: String = "Kefa"
     @objc dynamic var _fontColor: String = "black"
     var guestInfor = List<rowInfor>()
 }

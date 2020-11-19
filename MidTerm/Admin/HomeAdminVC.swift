@@ -9,6 +9,13 @@ import UIKit
 import RealmSwift
 
 class HomeAdminVC: UIViewController {
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    func editBtn(btn: UIButton)  {
+        btn.layer.borderWidth = 5
+        btn.layer.borderColor = UIColor.green.cgColor
+        btn.layer.cornerRadius = 10
+    }
     @IBAction func clickExit(){
         self.navigationController?.popViewController(animated: true)
     }
@@ -22,7 +29,7 @@ class HomeAdminVC: UIViewController {
                 realm.deleteAll()
             }
             let dest = self.storyboard?.instantiateViewController(identifier: "EventMainVC") as! EventMainVC
-            
+            dest.action = "Create new event"
             self.navigationController?.pushViewController(dest, animated: true)
         }
         alertVC.addAction(okAction)
@@ -49,6 +56,8 @@ class HomeAdminVC: UIViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
+        editBtn(btn: btn1)
+        editBtn(btn: btn2)
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
