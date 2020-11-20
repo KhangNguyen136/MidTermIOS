@@ -29,7 +29,7 @@ class chooseTableVC: UIViewController {
         if(infor.isEmpty)
         {
             //titleVC.text = "There is no result with last name begins with \(by)"
-            print("No result")
+            titleVC.text = "There is nobody has last name initial with \(key)"
         }
         else
         {
@@ -50,7 +50,7 @@ class chooseTableVC: UIViewController {
         {
             return
         }
-        titleVC.text = infor[0]._eventName
+        
         titleVC.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
         titleVC.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
     }

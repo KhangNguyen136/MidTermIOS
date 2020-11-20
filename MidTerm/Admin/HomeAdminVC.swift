@@ -20,11 +20,19 @@ class HomeAdminVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func createNewEvent(){
+        let realm = try! Realm()
+        let temp = realm.objects(eventInfor.self)
+        if temp.isEmpty{
+            let dest = self.storyboard?.instantiateViewController(identifier: "EventMainVC") as! EventMainVC
+            dest.action = "Create new event"
+            self.navigationController?.pushViewController(dest, animated: true)
+            return
+        }
         let alertVC = UIAlertController(title: "Warning!!!", message: "Create new event will delete all informations of current event in the app.", preferredStyle: .actionSheet)
 
         let okAction = UIAlertAction(title: "Continue", style: .destructive)
         {_ in
-            let realm = try! Realm()
+            
             try! realm.write {
                 realm.deleteAll()
             }

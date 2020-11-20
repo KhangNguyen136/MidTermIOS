@@ -16,8 +16,7 @@ class fliterTableVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //AButton.addTarget(self, action: #selector(clickChar(_:)), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+       
     }
     @IBAction func clickChar( sender: UIButton!){
         if let temp = sender.titleLabel?.text {
@@ -44,6 +43,7 @@ class fliterTableVC: UIViewController {
             return
         }
         
+        titleVC.text = "Please select your last name initial!"
         titleVC.font = UIFont(name: infor[0]._fontStyle, size: CGFloat(infor[0]._fontSize))
         titleVC.textColor = UIColor().getMyColor(color: infor[0]._fontColor)
     }
