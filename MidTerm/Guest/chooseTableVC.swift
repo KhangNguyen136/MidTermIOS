@@ -88,7 +88,7 @@ extension chooseTableVC : UITableViewDataSource, UITableViewDelegate {
       
         let cell: resultInfor = resultTV.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! resultInfor
         
-        cell.takeData(_name: result[indexPath.row].fName+" , "+result[indexPath.row].lName)
+        cell.takeData(_name: result[indexPath.row].fName+" , "+result[indexPath.row].lName, font: titleVC.font)
         
         return cell
     }

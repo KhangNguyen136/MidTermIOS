@@ -12,9 +12,7 @@
 		E927EAD7C496B0E614C86292 /* Pods_MidTermTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962F72D217A59E41E08EA71F /* Pods_MidTermTests.framework */; };
 		F14E14FE255E43D600C6B372 /* filterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E14FD255E43D600C6B372 /* filterVC.swift */; };
 		F14E1503255E441200C6B372 /* chooseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E1502255E441200C6B372 /* chooseTableVC.swift */; };
-		F14E1508255E496300C6B372 /* 901844-200.png in Resources */ = {isa = PBXBuildFile; fileRef = F14E1507255E496300C6B372 /* 901844-200.png */; };
 		F1549EAA255DEAD200A3F22B /* resultInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1549EA6255DEAD200A3F22B /* resultInfor.swift */; };
-		F1549EAB255DEAD200A3F22B /* findTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1549EA7255DEAD200A3F22B /* findTableVC.swift */; };
 		F1549EAC255DEAD200A3F22B /* tableInforVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1549EA8255DEAD200A3F22B /* tableInforVC.swift */; };
 		F1549EAD255DEAD200A3F22B /* GuestHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1549EA9255DEAD200A3F22B /* GuestHomeVC.swift */; };
 		F1549EB5255DEADD00A3F22B /* HomeAdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1549EB1255DEADD00A3F22B /* HomeAdminVC.swift */; };
@@ -30,6 +28,9 @@
 		F155334A25552DAC005D4006 /* ic-customer.png in Resources */ = {isa = PBXBuildFile; fileRef = F155334725552DAC005D4006 /* ic-customer.png */; };
 		F155334B25552DAC005D4006 /* ic-dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = F155334825552DAC005D4006 /* ic-dropdown.png */; };
 		F155334C25552DAC005D4006 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = F155334925552DAC005D4006 /* save.png */; };
+		F155D1582567AB9100B8B3B9 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155D1572567AB9100B8B3B9 /* loginVC.swift */; };
+		F155D15D2567AC5800B8B3B9 /* avt.png in Resources */ = {isa = PBXBuildFile; fileRef = F155D15C2567AC5800B8B3B9 /* avt.png */; };
+		F155D1622567B6E000B8B3B9 /* 901844-200.png in Resources */ = {isa = PBXBuildFile; fileRef = F155D1612567B6E000B8B3B9 /* 901844-200.png */; };
 		F16056AB2553D9E60075EF2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16056AA2553D9E60075EF2A /* AppDelegate.swift */; };
 		F16056AD2553D9E60075EF2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16056AC2553D9E60075EF2A /* SceneDelegate.swift */; };
 		F16056AF2553D9E60075EF2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16056AE2553D9E60075EF2A /* HomeViewController.swift */; };
@@ -71,9 +72,7 @@
 		E1F1AD2A92C67A16C1B94BED /* Pods_MidTerm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidTerm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14E14FD255E43D600C6B372 /* filterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterVC.swift; sourceTree = "<group>"; };
 		F14E1502255E441200C6B372 /* chooseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseTableVC.swift; sourceTree = "<group>"; };
-		F14E1507255E496300C6B372 /* 901844-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "901844-200.png"; sourceTree = "<group>"; };
 		F1549EA6255DEAD200A3F22B /* resultInfor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultInfor.swift; sourceTree = "<group>"; };
-		F1549EA7255DEAD200A3F22B /* findTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = findTableVC.swift; sourceTree = "<group>"; };
 		F1549EA8255DEAD200A3F22B /* tableInforVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableInforVC.swift; sourceTree = "<group>"; };
 		F1549EA9255DEAD200A3F22B /* GuestHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestHomeVC.swift; sourceTree = "<group>"; };
 		F1549EB1255DEADD00A3F22B /* HomeAdminVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAdminVC.swift; sourceTree = "<group>"; };
@@ -89,6 +88,9 @@
 		F155334725552DAC005D4006 /* ic-customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic-customer.png"; path = "MidTerm/images/ic-customer.png"; sourceTree = "<group>"; };
 		F155334825552DAC005D4006 /* ic-dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic-dropdown.png"; path = "MidTerm/images/ic-dropdown.png"; sourceTree = "<group>"; };
 		F155334925552DAC005D4006 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save.png; path = MidTerm/images/save.png; sourceTree = "<group>"; };
+		F155D1572567AB9100B8B3B9 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		F155D15C2567AC5800B8B3B9 /* avt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = avt.png; path = MidTerm/images/avt.png; sourceTree = "<group>"; };
+		F155D1612567B6E000B8B3B9 /* 901844-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "901844-200.png"; path = "MidTerm/images/901844-200.png"; sourceTree = "<group>"; };
 		F16056A72553D9E60075EF2A /* MidTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16056AA2553D9E60075EF2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F16056AC2553D9E60075EF2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,7 +181,6 @@
 		F1549EA5255DEA5400A3F22B /* Guest */ = {
 			isa = PBXGroup;
 			children = (
-				F1549EA7255DEAD200A3F22B /* findTableVC.swift */,
 				F1549EA9255DEAD200A3F22B /* GuestHomeVC.swift */,
 				F1549EA6255DEAD200A3F22B /* resultInfor.swift */,
 				F1549EA8255DEAD200A3F22B /* tableInforVC.swift */,
@@ -192,7 +193,8 @@
 		F160569E2553D9E60075EF2A = {
 			isa = PBXGroup;
 			children = (
-				F14E1507255E496300C6B372 /* 901844-200.png */,
+				F155D15C2567AC5800B8B3B9 /* avt.png */,
+				F155D1612567B6E000B8B3B9 /* 901844-200.png */,
 				F1CD9EC125554362007E1BA7 /* wed.jpg */,
 				F155334725552DAC005D4006 /* ic-customer.png */,
 				F155334825552DAC005D4006 /* ic-dropdown.png */,
@@ -234,6 +236,7 @@
 				F16056B52553D9E70075EF2A /* LaunchScreen.storyboard */,
 				F16056B82553D9E70075EF2A /* Info.plist */,
 				F16056AE2553D9E60075EF2A /* HomeViewController.swift */,
+				F155D1572567AB9100B8B3B9 /* loginVC.swift */,
 			);
 			path = MidTerm;
 			sourceTree = "<group>";
@@ -364,15 +367,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14E1508255E496300C6B372 /* 901844-200.png in Resources */,
 				F155333E25552D87005D4006 /* header2.png in Resources */,
 				F155334B25552DAC005D4006 /* ic-dropdown.png in Resources */,
 				F155334C25552DAC005D4006 /* save.png in Resources */,
 				F155333C25552D87005D4006 /* 163-1636515_add-button-png-cross.png in Resources */,
 				F155333B25552D87005D4006 /* header1.png in Resources */,
+				F155D15D2567AC5800B8B3B9 /* avt.png in Resources */,
 				F16056B72553D9E70075EF2A /* LaunchScreen.storyboard in Resources */,
 				F16056B42553D9E70075EF2A /* Assets.xcassets in Resources */,
 				F1CD9EC225554362007E1BA7 /* wed.jpg in Resources */,
+				F155D1622567B6E000B8B3B9 /* 901844-200.png in Resources */,
 				F155333D25552D87005D4006 /* exit.png in Resources */,
 				F155334025552D87005D4006 /* clear.png in Resources */,
 				F155334A25552DAC005D4006 /* ic-customer.png in Resources */,
@@ -514,8 +518,8 @@
 				F1549EAC255DEAD200A3F22B /* tableInforVC.swift in Sources */,
 				F14E14FE255E43D600C6B372 /* filterVC.swift in Sources */,
 				F1549EB7255DEADD00A3F22B /* AddGuestVC.swift in Sources */,
-				F1549EAB255DEAD200A3F22B /* findTableVC.swift in Sources */,
 				F1549EAA255DEAD200A3F22B /* resultInfor.swift in Sources */,
+				F155D1582567AB9100B8B3B9 /* loginVC.swift in Sources */,
 				F1CE00D3256669A100F0731E /* DBObjects.swift in Sources */,
 				F1549EB6255DEADD00A3F22B /* guestInfort.swift in Sources */,
 				F1CE00C92566535200F0731E /* pickColorAlertVC.swift in Sources */,

@@ -50,8 +50,11 @@ class tableInforVC: UIViewController {
         {
             for i in result
             {
-                arr.append(i)
+                if i.fName != infor.fName || i.lName != infor.lName || i.guest != infor.guest || i.section != infor.section {
+                    arr.append(i)
+                }
             }
+//
             tableInfor.reloadData()
         }
         
@@ -83,7 +86,7 @@ class tableInforVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         table.layer.masksToBounds = true
         table.layer.cornerRadius = table.frame.width/3
-        table.backgroundColor = UIColor.systemGray4
+        table.backgroundColor = UIColor.systemPink
         
         guests.layer.borderWidth = 5
         guests.layer.borderColor = UIColor.brown.cgColor

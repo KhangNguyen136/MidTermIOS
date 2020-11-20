@@ -14,8 +14,9 @@ class resultInfor: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func takeData(_name: String) {
+    func takeData(_name: String, font: UIFont) {
         name.text = _name
+        name.font = font
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
