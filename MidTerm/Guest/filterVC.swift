@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class fliterTableVC: UIViewController {
+class filterTableVC: UIViewController {
 
 
     @IBOutlet weak var titleVC: UILabel!

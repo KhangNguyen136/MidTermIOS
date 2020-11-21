@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="1875" y="654"/>
         </scene>
-        <!--Fliter TableVC-->
+        <!--Filter TableVC-->
         <scene sceneID="jZh-Zc-SCK">
             <objects>
-                <viewController storyboardIdentifier="fliterTableVC" id="0w1-nI-38P" customClass="fliterTableVC" customModule="MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="filterTableVC" id="0w1-nI-38P" customClass="filterTableVC" customModule="MidTerm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMF-F3-QXm">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,7 +722,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ma-aY-7fO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ma-aY-7fO">
                                 <rect key="frame" x="50" y="30" width="668" height="42.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Please select your name">
@@ -1219,29 +1219,29 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="guestInfor" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="row" id="zXI-wx-FaB" customClass="guestInfort" customModule="MidTerm" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="768" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="768" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zXI-wx-FaB" id="N6C-tf-Q2q">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="52.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-cs-Nff">
-                                                    <rect key="frame" x="20" y="10" width="230.5" height="32.5"/>
+                                                    <rect key="frame" x="20" y="10" width="230.5" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yrj-eW-fe7">
-                                                    <rect key="frame" x="260.5" y="10" width="115" height="32.5"/>
+                                                    <rect key="frame" x="260.5" y="10" width="115" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-py-Doz">
-                                                    <rect key="frame" x="385.5" y="10" width="115.5" height="32.5"/>
+                                                    <rect key="frame" x="385.5" y="10" width="115.5" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ekg-LM-Mhk">
-                                                    <rect key="frame" x="511" y="10" width="227" height="32.5"/>
+                                                    <rect key="frame" x="511" y="10" width="227" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>

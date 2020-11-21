@@ -22,8 +22,8 @@ class AddGuestVC: UIViewController {
             
             let okAction = UIAlertAction(title: "Ok", style: .default)
             alertVC.addAction(okAction)
-            alertVC.setTitlet(font: UIFont(name: "Arial", size: 25), color: .red)
-            alertVC.setMessage(font: UIFont(name: "Arial", size: 20), color: .black)
+            alertVC.setTitlet(font: UIFont(name: "Arial", size: 30), color: .red)
+            alertVC.setMessage(font: UIFont(name: "Arial", size: 22), color: .black)
             if let popoverController = alertVC.popoverPresentationController {
                             popoverController.sourceView = self.view //to set the source of your alert
                             popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0) // you can set this as per your requirement.
@@ -33,14 +33,31 @@ class AddGuestVC: UIViewController {
             return
             //bug
         }
+        if Int(((lName.text?.prefix(1))!)) != nil
+        {
+            let alertVC = UIAlertController(title: "Message", message: "Last name can't start with number!", preferredStyle: .actionSheet)
+            
+            let okAction = UIAlertAction(title: "Ok", style: .default)
+            alertVC.addAction(okAction)
+            alertVC.setTitlet(font: UIFont(name: "Arial", size: 30), color: .red)
+            alertVC.setMessage(font: UIFont(name: "Arial", size: 22), color: .black)
+            if let popoverController = alertVC.popoverPresentationController {
+                            popoverController.sourceView = self.view //to set the source of your alert
+                            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0) // you can set this as per your requirement.
+                            popoverController.permittedArrowDirections = [] //to hide the arrow of any particular direction
+                        }
+            
+            self.present(alertVC, animated: true)
+            return
+        }
         if( (Int(numberGuest.text!) == nil))
         {
             let alertVC = UIAlertController(title: "Message", message: "Number of guest must be an integer!", preferredStyle: .actionSheet)
             
             let okAction = UIAlertAction(title: "Ok", style: .default)
             alertVC.addAction(okAction)
-            alertVC.setTitlet(font: UIFont(name: "Arial", size: 25), color: .red)
-            alertVC.setMessage(font: UIFont(name: "Arial", size: 20), color: .black)
+            alertVC.setTitlet(font: UIFont(name: "Arial", size: 30), color: .red)
+            alertVC.setMessage(font: UIFont(name: "Arial", size: 22), color: .black)
             if let popoverController = alertVC.popoverPresentationController {
                             popoverController.sourceView = self.view //to set the source of your alert
                             popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0) // you can set this as per your requirement.

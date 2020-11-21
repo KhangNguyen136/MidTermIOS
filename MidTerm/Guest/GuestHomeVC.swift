@@ -30,7 +30,7 @@ class GuestHomeVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func toFindTable(){
-        let dest = self.storyboard?.instantiateViewController(identifier: "fliterTableVC") as! fliterTableVC
+        let dest = self.storyboard?.instantiateViewController(identifier: "filterTableVC") as! filterTableVC
         self.navigationController?.pushViewController(dest, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
