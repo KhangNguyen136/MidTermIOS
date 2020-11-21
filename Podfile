@@ -7,8 +7,6 @@ target 'MidTerm' do
 
   # Pods for MidTerm
 	pod 'RealmSwift'
-	pod 'FlexColorPicker'
-	pod 'AlertsAndPickers'
   target 'MidTermTests' do
     inherit! :search_paths
     # Pods for testing
