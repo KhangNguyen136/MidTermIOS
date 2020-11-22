@@ -18,12 +18,7 @@ class AddGuestVC: UIViewController {
     @IBAction func clickSave(){
         if(fName.text == "" || lName.text == "" || table.text == "" || section.text == "")
         {
-            let alertVC = UIAlertController(title: "Message", message: "You have to enter information!", preferredStyle: .actionSheet)
-            
-            let okAction = UIAlertAction(title: "Ok", style: .default)
-            alertVC.addAction(okAction)
-            alertVC.setTitlet(font: UIFont(name: "Arial", size: 30), color: .red)
-            alertVC.setMessage(font: UIFont(name: "Arial", size: 22), color: .black)
+            let alertVC = UIAlertController().makeMyAlert(title: "Message", msg: "You have to enter information!")
             if let popoverController = alertVC.popoverPresentationController {
                             popoverController.sourceView = self.view //to set the source of your alert
                             popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0) // you can set this as per your requirement.
@@ -35,12 +30,7 @@ class AddGuestVC: UIViewController {
         }
         if Int(((lName.text?.prefix(1))!)) != nil
         {
-            let alertVC = UIAlertController(title: "Message", message: "Last name can't start with number!", preferredStyle: .actionSheet)
-            
-            let okAction = UIAlertAction(title: "Ok", style: .default)
-            alertVC.addAction(okAction)
-            alertVC.setTitlet(font: UIFont(name: "Arial", size: 30), color: .red)
-            alertVC.setMessage(font: UIFont(name: "Arial", size: 22), color: .black)
+            let alertVC = UIAlertController().makeMyAlert(title: "Message", msg: "Last name can't start with number!")
             if let popoverController = alertVC.popoverPresentationController {
                             popoverController.sourceView = self.view //to set the source of your alert
                             popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0) // you can set this as per your requirement.
@@ -52,12 +42,7 @@ class AddGuestVC: UIViewController {
         }
         if( (Int(numberGuest.text!) == nil))
         {
-            let alertVC = UIAlertController(title: "Message", message: "Number of guest must be an integer!", preferredStyle: .actionSheet)
-            
-            let okAction = UIAlertAction(title: "Ok", style: .default)
-            alertVC.addAction(okAction)
-            alertVC.setTitlet(font: UIFont(name: "Arial", size: 30), color: .red)
-            alertVC.setMessage(font: UIFont(name: "Arial", size: 22), color: .black)
+            let alertVC = UIAlertController().makeMyAlert(title: "Message", msg: "Number of guest must be an integer!")
             if let popoverController = alertVC.popoverPresentationController {
                             popoverController.sourceView = self.view //to set the source of your alert
                             popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0) // you can set this as per your requirement.
@@ -102,6 +87,18 @@ class AddGuestVC: UIViewController {
 }
 
 extension UIAlertController {
+    func makeMyAlert(title: String, msg: String) ->UIAlertController{
+        let alertVC = UIAlertController(title: title, message: msg, preferredStyle: .actionSheet)
+
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alertVC.addAction(okAction)
+        
+        
+        
+        alertVC.setMessage(font: UIFont(name: "Arial", size: 25), color: .black)
+        alertVC.setTitlet(font: UIFont(name: "Arial", size: 33), color: .red)
+        return alertVC
+    }
     
     //Set background color of UIAlertController
     func setBackgroundColor(color: UIColor) {

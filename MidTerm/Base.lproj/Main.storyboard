@@ -1219,29 +1219,29 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="guestInfor" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="row" id="zXI-wx-FaB" customClass="guestInfort" customModule="MidTerm" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="768" height="52"/>
+                                        <rect key="frame" x="0.0" y="28" width="768" height="52.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zXI-wx-FaB" id="N6C-tf-Q2q">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="52.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-cs-Nff">
-                                                    <rect key="frame" x="20" y="10" width="230.5" height="32"/>
+                                                    <rect key="frame" x="20" y="10" width="230.5" height="32.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yrj-eW-fe7">
-                                                    <rect key="frame" x="260.5" y="10" width="115" height="32"/>
+                                                    <rect key="frame" x="260.5" y="10" width="115" height="32.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-py-Doz">
-                                                    <rect key="frame" x="385.5" y="10" width="115.5" height="32"/>
+                                                    <rect key="frame" x="385.5" y="10" width="115.5" height="32.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ekg-LM-Mhk">
-                                                    <rect key="frame" x="511" y="10" width="227" height="32"/>
+                                                    <rect key="frame" x="511" y="10" width="227" height="32.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1647,6 +1647,10 @@
                                     <action selector="clickForgetPass" destination="4ef-G0-Uly" eventType="touchUpInside" id="guw-Ua-DcY"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pta-wJ-e4u">
+                                <rect key="frame" x="0.0" y="949" width="768" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AT6-al-d12"/>
                         <color key="backgroundColor" red="0.85213216680120074" green="0.98229423878755862" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1662,11 +1666,14 @@
                             <constraint firstItem="r3e-6S-sIa" firstAttribute="leading" secondItem="nnz-2z-bco" secondAttribute="trailing" constant="40" id="PXU-NW-eie"/>
                             <constraint firstItem="vcI-NI-7u7" firstAttribute="leading" secondItem="nnz-2z-bco" secondAttribute="trailing" constant="20" id="QJa-4O-k6y"/>
                             <constraint firstItem="gX6-DT-zWW" firstAttribute="leading" secondItem="r3e-6S-sIa" secondAttribute="trailing" constant="20" id="T9d-4o-Mnw"/>
+                            <constraint firstItem="AT6-al-d12" firstAttribute="bottom" secondItem="Pta-wJ-e4u" secondAttribute="bottom" id="Xd9-yJ-nMf"/>
                             <constraint firstItem="r3e-6S-sIa" firstAttribute="top" secondItem="Kqe-FS-1Ds" secondAttribute="bottom" constant="20" id="cHe-K0-aUU"/>
+                            <constraint firstItem="Pta-wJ-e4u" firstAttribute="leading" secondItem="AT6-al-d12" secondAttribute="leading" id="daj-Ta-wEl"/>
                             <constraint firstItem="gX6-DT-zWW" firstAttribute="bottom" secondItem="r3e-6S-sIa" secondAttribute="bottom" id="etU-Jh-Xlq"/>
                             <constraint firstItem="AT6-al-d12" firstAttribute="trailing" secondItem="Dqf-PL-8Gw" secondAttribute="trailing" constant="50" id="gPU-1y-kKa"/>
                             <constraint firstItem="vcI-NI-7u7" firstAttribute="bottom" secondItem="Dqf-PL-8Gw" secondAttribute="bottom" id="gfi-XN-XRh"/>
                             <constraint firstItem="nnz-2z-bco" firstAttribute="top" secondItem="s8c-Xy-OMD" secondAttribute="bottom" constant="20" id="jMO-wz-pph"/>
+                            <constraint firstItem="AT6-al-d12" firstAttribute="trailing" secondItem="Pta-wJ-e4u" secondAttribute="trailing" id="k4d-Pb-NXT"/>
                             <constraint firstItem="Dqf-PL-8Gw" firstAttribute="top" secondItem="s8c-Xy-OMD" secondAttribute="bottom" constant="50" id="nX3-bh-Ek9"/>
                             <constraint firstItem="Kqe-FS-1Ds" firstAttribute="leading" secondItem="Dqf-PL-8Gw" secondAttribute="leading" id="nvk-GQ-cvs"/>
                             <constraint firstItem="4Lp-xW-QRc" firstAttribute="top" secondItem="AT6-al-d12" secondAttribute="top" id="pO3-lx-agZ"/>
